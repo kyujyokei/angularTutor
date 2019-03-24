@@ -1,0 +1,22 @@
+<div class="wrap">
+  <div class="menu">
+    <button (click)="add('meat')">Meat</button>
+    <button (click)="add('rice')">Rice</button>
+    <button (click)="add('mushroom')">Mushroom</button>
+    <button (click)="add('honey')">Honey</button>
+    <button (click)="add('monster')">Monster Parts</button>
+  </div>
+  <div class="right">
+    <!--<p>bubui</p>-->
+    <div class="pot">
+      <div *ngFor="let item of ingredients | keyvalue">
+        <!--<p>{{item.key}} / {{item.value}}</p>-->
+        <div *ngIf="item.value" class="food"> {{item.key}} </div>
+      </div>
+    </div>
+    <div class="results">
+      <button (click)="check()">COOK!</button>
+      <p *ngIf="dishMade">{{dish}}</p>
+    </div>
+  </div>
+</div>

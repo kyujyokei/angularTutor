@@ -1,0 +1,42 @@
+.wrap{
+  display: flex;
+}
+
+.menu{
+  border: 3px solid cornflowerblue;
+  display: block;
+  width: 40%;
+  height: 500px;
+}
+
+button{
+  display: block;
+  padding: 20px;
+  margin: 30px auto;
+  width: 200px;
+}
+
+.right{
+  height: 500px;
+  position: relative;
+  width: 60%;
+  border: 3px solid yellowgreen;
+  display: block;
+}
+
+.food {
+  margin: auto;
+  text-align: center;
+}
+
+.pot{
+  border: 2px solid orange;
+  height: 60%;
+  width: 100%;
+}
+
+.results{
+  border: 2px solid paleturquoise;
+  height: 40%;
+  width: 100%;
+}
